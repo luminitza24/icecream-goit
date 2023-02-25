@@ -78,11 +78,8 @@
     padding: 0;
   }
   .images-item {
-    display: inline-block;
-    border-radius: 30px;
-    max-width: 195px;
-    height: 275px;
     margin-bottom: 157px;
+    border-radius: 30px;
     overflow: hidden;
     transition-property: transform;
     &:hover {
@@ -138,6 +135,6 @@
     flex-direction: column;
   }
   .images-item:nth-child(2n) {
-    left: 250px;
+    left: 350px;
   }
 }

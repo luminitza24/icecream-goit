@@ -1,9 +1,11 @@
 @import "../utils/vars";
+.goal-section {
+  background-image: url("/images/background-pic/Background-760.png");
+  background-repeat: no-repeat;
+}
 .container-flex {
   max-width: 480px;
   margin: 0 auto;
-  background-image: url("/images/background-pic/Background-760.png");
-  background-repeat: no-repeat;
 }
 .goal-section {
   width: 100%;
@@ -80,7 +82,7 @@
   align-items: center;
 }
 @media screen and (min-width: 780px) {
-  .container-flex {
+  .goal-section {
     background-image: url("/images/background-pic/Background-960.png");
   }
 }
@@ -100,13 +102,15 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .goal-section {
+    background-image: url("/images/background-pic/Background-1600.png");
+  }
   .container-flex {
     max-width: 1280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("/images/background-pic/Background-1600.png");
   }
   .paragraph-section {
     display: flex;
