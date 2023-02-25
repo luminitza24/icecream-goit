@@ -1,9 +1,11 @@
 @import "../utils/vars";
 .container-flex {
   max-width: 480px;
+  margin: 0 auto;
+  background-image: url("/images/background-pic/Background-760.png");
+  background-repeat: no-repeat;
 }
 .goal-section {
-  background-image: url("/images/background-pic/Background-768.jpg");
   width: 100%;
   margin: 0 auto;
 }
@@ -14,6 +16,11 @@
 }
 .pink-image {
   margin-top: 40px;
+  transition-property: transform;
+  &:hover {
+    transform: rotate(180deg);
+    transition-duration: 500ms;
+  }
 }
 .description-list {
   width: 100%;
@@ -29,7 +36,13 @@
   height: 133px;
   border: 1px solid var(--primary1-color);
   border-radius: 20px;
+  background-color: var(--bg-color);
   text-align: center;
+  transition-property: transform;
+  &:hover {
+    transform: scale(1.5);
+    transition-duration: 500ms;
+  }
 }
 .description-item:nth-child(2n) {
   position: relative;
@@ -68,8 +81,7 @@
 }
 @media screen and (min-width: 780px) {
   .container-flex {
-    background-image: url("/images/background-pic/Background-960.jpg");
-    flex-direction: column-reverse;
+    background-image: url("/images/background-pic/Background-960.png");
   }
 }
 
@@ -83,15 +95,46 @@
     left: 200px;
   }
   .pink-image {
-    display: none;
+    position: relative;
+    left: -200px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container-flex {
     max-width: 1280px;
-    background-image: url("/images/background-pic/Background-1600.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/background-pic/Background-1600.png");
   }
   .paragraph-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .paragraph-section .page-paragraph {
+    margin-bottom: 60px;
+    width: 480px;
+    position: relative;
+    right: -250px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .list-section {
     width: 50%;
+  }
+  .description-list {
+    position: relative;
+    left: 100px;
+  }
+  .imaging {
+    width: 50%;
+  }
+  .pink-image {
+    position: relative;
+    top: -200px;
+    left: -350px;
   }
 }
