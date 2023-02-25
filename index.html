@@ -21,34 +21,38 @@
     <title>About us</title>
   </head>
   <body>
+    <main>
     <section class="description-section">
       <div class="container">
-        <div class="images">
-          <ul>
-            <li>
+        <div class="images-section">
+          <ul class="images-list">
+            <li class="images-item">
               <img
-                src="./images/ice-cream/sprincle-icecream.jpg"
+                src="./images/ice-cream/sprincle-icecream.png"
                 alt="sprincle ice-cream"
               />
             </li>
-            <li>
+            <li class="images-item">
               <img
-                src="./images/ice-cream/flavoured-icecream.jpg"
-                alt="flavoured ice-cream"
+              src="./images/ice-cream/strawberry-icecream.png"
+                alt="strawberry ice-cream"
               />
             </li>
-            <li>
+            <li class="images-item">
               <img
-                src="./images/ice-cream/strawberry-icecream.jpg"
-                alt="strawberry ice-cream"
+              src="./images/ice-cream/flavoured-icecream.png"
+              alt="flavoured ice-cream"
               />
             </li>
           </ul>
         </div>
         <div class="description">
+          <svg class="icon">
+            <use href="images/symbol-defs.svg#icon-icecream"></use>
+          </svg>
           <h3 class="section-subtitle">Why we do it</h3>
           <h2 class="section-title">Ice cream life</h2>
-          <p>
+          <p class="page-paragraph">
             Welcome to our ice cream store, where we believe that a good scoop
             of ice cream can make any day better. For us, it's not just about
             the delicious flavors or creamy texture, but about the joy and
@@ -61,40 +65,37 @@
         </div>
       </div>
     </section>
-    <section class="Goals-section">
-      <div class="container">
+    <section class="goal-section">
+      <div class="container-flex">
+        <div class="paragraph-section">
         <h3 class="section-subtitle">What Drives us</h3>
         <h2 class="section-title">Our goal</h2>
-        <div>
-          <img
-            srcset="
-              images/ice-cream/pink-icecream.jpg    1x,
-              images/ice-cream/pink-icecream@2x.jpg 2x
-            "
-            src="images/ice-cream/pink-icecream.jpg"
-            alt="pink ice-cream"
-          />
-        </div>
-        <div>
-          <dl class="">
-            <dt>600</dt>
-            <dd>Satisfied customers per day</dd>
-            <dt>50</dt>
-            <dd>Awards for excelent service</dd>
-            <dt>20</dt>
-            <dd>Kyiv's best barbers</dd>
-            <dt>100</dt>
-            <dd>Gift's for regular customers</dd>
-          </dl>
-        </div>
-        <div>
-          <p>
+          <p class="page-paragraph">
             Our goal is simple: to make the best ice cream in town and to bring
             smiles to our customers' faces. What drives us is the joy that we
             see in our customers when they taste our delicious treats.
           </p>
         </div>
+        <div class="list-section">
+          <ul class="description-list">
+            <li class="description-item"><p class="awards">600</p>
+                <p class="awards-item">Satisfied customers</p></li>
+                <li class="description-item"><p class="awards">50</p>
+                  <p class="awards-item">Awards for excelent service</p></li>
+                  <li class="description-item"><p class="awards">23</p>
+                    <p class="awards-item">flavours</p></li>
+                    <li class="description-item"><p class="awards">100</p>
+                      <p class="awards-item">Gift's for regular customers</p></li>
+        </div>
+        <div class="imaging">
+          <img
+            class="pink-image"
+            src="images/ice-cream/pink-icecream.png"
+            alt="pink ice-cream"
+          />
+        </div>
       </div>
     </section>
+  </main>
   </body>
 </html>

@@ -1,0 +1,120 @@
+@import "../utils/vars";
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.images-section {
+  display: none;
+}
+.description {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.icon {
+  width: 51px;
+  height: 49px;
+  fill: var(--primary1-color);
+  margin-top: 20px;
+}
+.page-paragraph {
+  color: var(--paragraph-color);
+  font-family: DM Sans;
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 1.52;
+}
+.section-subtitle {
+  color: var(--primary1-color);
+  font-family: titan one;
+  font-size: 18px;
+  line-height: 1.14;
+  display: inline-block;
+  margin-bottom: 39px;
+  border: 1px solid blue;
+}
+.section-title {
+  color: var(--brand-color);
+  font-family: titan one;
+  line-height: 1.14;
+  font-size: 34px;
+  margin-bottom: 70px;
+  border: 1px solid green;
+}
+@media screen and (min-width: 780px) {
+  .container {
+    max-width: 780px;
+    display: flex;
+  }
+  .description {
+    margin-left: 76px;
+    justify-content: center;
+    align-items: center;
+  }
+  .images-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .images-list {
+    list-style-type: none;
+    position: relative;
+  }
+  .images-item {
+    display: inline-block;
+    border-radius: 30px;
+    max-width: 195px;
+    height: 275px;
+    object-fit: contain;
+    overflow: hidden;
+  }
+  .images-item:nth-child(2n) {
+    position: absolute;
+    left: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-subtitle {
+    font-size: 26px;
+  }
+  .section-title {
+    font-size: 48px;
+  }
+  .page-paragraph {
+    line-height: 1.76;
+    font-weight: 500px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-title {
+    font-size: 58px;
+  }
+  .section-subtitle {
+    font-size: 30px;
+  }
+  .page-paragraph {
+    line-height: 1.94;
+  }
+  .container {
+    max-width: 1280px;
+    display: flex;
+  }
+  .description {
+    text-align: left;
+  }
+  .icon {
+    margin-right: 150px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .images-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .images-item {
+    margin-bottom: 157px;
+  }
+}
