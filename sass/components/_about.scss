@@ -1,6 +1,6 @@
 @import "../utils/vars";
 
-.container {
+.container-ourgoal {
   max-width: 480px;
   margin: 0 auto;
   text-align: center;
@@ -58,7 +58,7 @@
   }
 }
 @media screen and (min-width: 780px) {
-  .container {
+  .container-ourgoal {
     max-width: 780px;
   }
   .thumb {
@@ -143,7 +143,7 @@
     line-height: 1.94;
     font-size: 20px;
   }
-  .container {
+  .container-ourgoal {
     max-width: 1280px;
   }
   .images-item:nth-child(2n) {
