@@ -119,8 +119,9 @@
     max-width: 1600px;
     background-image: url("/images/background-pic/Background-1600.png");
   }
-  .container-flex {
+  .container-ourgoal {
     max-width: 1280px;
+    margin-bottom: 50px;
     .our-goal {
       width: 100%;
       display: flex;
@@ -141,5 +142,6 @@
     position: relative;
     top: 100px;
     left: -50px;
+    z-index: 99;
   }
 }
